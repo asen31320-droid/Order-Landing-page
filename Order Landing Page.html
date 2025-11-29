@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combo Pack Order | Premium Offer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #fff8f3, #ffe8e0);
+      font-family: 'Hind Siliguri', sans-serif;
+      color: #2c3e50;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    header {
+      background: linear-gradient(90deg, #ff7043, #ff5722);
+      color: white;
+      text-align: center;
+      padding: 25px 10px;
+    }
+
+    .logo img {
+      width: 130px;
+      margin-bottom: 10px;
+    }
+
+    .hero-section {
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    .product-img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .price-tag {
+      font-size: 30px;
+      font-weight: 700;
+      color: #ff5722;
+      margin-top: 10px;
+    }
+
+    .old-price {
+      text-decoration: line-through;
+      color: #777;
+      margin-right: 8px;
+    }
+
+    .details {
+      background: #fff3e0;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 10px;
+    }
+
+    .details h3 {
+      color: #ff5722;
+    }
+
+    .order-form-container {
+      margin: 20px;
+      padding: 25px;
+      border: 2px solid #ff5722;
+      border-radius: 10px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .order-btn {
+      width: 100%;
+      background: #ff5722;
+      color: white;
+      border: none;
+      padding: 15px;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .order-btn:hover {
+      background: #e64a19;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      color: #777;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <div class="logo">
+      <!-- তোমার কোম্পানির লোগো -->
+      <img src="https://i.ibb.co/2tYj5yB/sample-logo.png" alt="Logo">
+    </div>
+    <h2>🔥 প্রিমিয়াম কম্বো প্যাক অফার 🔥</h2>
+  </header>
+
+  <section class="hero-section">
+    <!-- তোমার প্রোডাক্ট ইমেজ -->
+    <img src="https://i.ibb.co/QM9Wm4g/sample-product.jpg" alt="Product" class="product-img">
+    <h1>প্রিমিয়াম লাইফস্টাইল কম্বো প্যাক</h1>
+    <div class="price-tag">
+      <span class="old-price">১৫০০ টাকা</span> ৯৯৯ টাকা
+    </div>
+    <p style="color:green;font-weight:bold;">🚚 ডেলিভারি চার্জ ফ্রি!</p>
+  </section>
+
+  <section class="details">
+    <h3>এই কম্বো প্যাকে যা থাকছে:</h3>
+    <ul>
+      <li>✅ ১টি প্রিমিয়াম টি-শার্ট</li>
+      <li>✅ ১টি স্টাইলিশ ওয়ালেট</li>
+      <li>✅ ১টি ডিজিটাল হাতঘড়ি</li>
+      <li>✅ চেক করে পেমেন্টের সুবিধা</li>
+    </ul>
+  </section>
+
+  <section class="order-form-container">
+    <h2 style="text-align:center;">অর্ডার কনফার্ম করুন</h2>
+
+    <form id="orderForm">
+      <div class="form-group">
+        <label>আপনার নাম:</label>
+        <input type="text" id="name" required>
+      </div>
+      <div class="form-group">
+        <label>মোবাইল নাম্বার:</label>
+        <input type="tel" id="phone" pattern="[0-9]{11}" required>
+      </div>
+      <div class="form-group">
+        <label>ঠিকানা:</label>
+        <textarea id="address" rows="3" required></textarea>
+      </div>
+      <button type="submit" class="order-btn">✅ অর্ডার কনফার্ম করুন</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 আপনার কোম্পানির নাম। সর্বস্বত্ব সংরক্ষিত।
+  </footer>
+</div>
+
+<script>
+  // 🟠 এখানে তোমার Google Apps Script Web App URL বসাও 👇
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbykrclEb3cawC5Lojb2uUL9uvwXtCXvDjcPW3ocCqLudw6lyGikSLlOODsFFP8GStmAdQ/exec';
+
+  document.getElementById('orderForm').addEventListener('submit', e => {
+    e.preventDefault();
+
+    const data = {
+      name: document.getElementById('name').value,
+      phone: document.getElementById('phone').value,
+      address: document.getElementById('address').value
+    };
+
+    fetch(scriptURL, {
+      method: 'POST',
+      body: JSON.stringify(data)
+    })
+    .then(res => {
+      alert('🎉 ধন্যবাদ! আপনার অর্ডারটি সফলভাবে রেকর্ড করা হয়েছে। আমাদের প্রতিনিধি শীঘ্রই যোগাযোগ করবে।');
+      document.getElementById('orderForm').reset();
+    })
+    .catch(err => alert('❌ দুঃখিত, কিছু সমস্যা হয়েছে! পরে আবার চেষ্টা করুন।'));
+  });
+</script>
+
+</body>
+</html>
